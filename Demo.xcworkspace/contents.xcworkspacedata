@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WrapperLibrary/WrapperLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Demo App/Demo App.xcodeproj">
    </FileRef>
 </Workspace>

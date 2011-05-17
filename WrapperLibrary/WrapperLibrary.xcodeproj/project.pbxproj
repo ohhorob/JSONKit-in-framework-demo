@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D46D905A1382D40700195662 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D46D90581382D40700195662 /* InfoPlist.strings */; };
+		D46D90611382D5E100195662 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D90601382D5E100195662 /* JSONKit.m */; };
+		D46D90641382D5FF00195662 /* MyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D90631382D5FF00195662 /* MyWrapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D46D90441382D3CC00195662 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D46D90521382D40700195662 /* WrapperLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapperLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46D90531382D40700195662 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D46D90571382D40700195662 /* WrapperLib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WrapperLib-Info.plist"; sourceTree = "<group>"; };
+		D46D90591382D40700195662 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D46D905B1382D40700195662 /* WrapperLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WrapperLib-Prefix.pch"; sourceTree = "<group>"; };
+		D46D905F1382D5E100195662 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D46D90601382D5E100195662 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D46D90621382D5FF00195662 /* MyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWrapper.h; sourceTree = "<group>"; };
+		D46D90631382D5FF00195662 /* MyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWrapper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D46D904F1382D40700195662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D46D90361382D3CC00195662 = {
+			isa = PBXGroup;
+			children = (
+				D46D90551382D40700195662 /* WrapperLib */,
+				D46D90431382D3CC00195662 /* Frameworks */,
+				D46D90421382D3CC00195662 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D46D90421382D3CC00195662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D46D90521382D40700195662 /* WrapperLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D46D90431382D3CC00195662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D46D90441382D3CC00195662 /* Foundation.framework */,
+				D46D90531382D40700195662 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D46D90551382D40700195662 /* WrapperLib */ = {
+			isa = PBXGroup;
+			children = (
+				D46D905F1382D5E100195662 /* JSONKit.h */,
+				D46D90601382D5E100195662 /* JSONKit.m */,
+				D46D90561382D40700195662 /* Supporting Files */,
+				D46D90621382D5FF00195662 /* MyWrapper.h */,
+				D46D90631382D5FF00195662 /* MyWrapper.m */,
+			);
+			path = WrapperLib;
+			sourceTree = "<group>";
+		};
+		D46D90561382D40700195662 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D46D90571382D40700195662 /* WrapperLib-Info.plist */,
+				D46D90581382D40700195662 /* InfoPlist.strings */,
+				D46D905B1382D40700195662 /* WrapperLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D46D90651382D80300195662 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D46D90511382D40700195662 /* WrapperLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46D905C1382D40700195662 /* Build configuration list for PBXNativeTarget "WrapperLib" */;
+			buildPhases = (
+				D46D904E1382D40700195662 /* Sources */,
+				D46D904F1382D40700195662 /* Frameworks */,
+				D46D90501382D40700195662 /* Resources */,
+				D46D90651382D80300195662 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WrapperLib;
+			productName = WrapperLib;
+			productReference = D46D90521382D40700195662 /* WrapperLib.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D46D90381382D3CC00195662 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D46D903B1382D3CC00195662 /* Build configuration list for PBXProject "WrapperLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D46D90361382D3CC00195662;
+			productRefGroup = D46D90421382D3CC00195662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D46D90511382D40700195662 /* WrapperLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D46D90501382D40700195662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46D905A1382D40700195662 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D46D904E1382D40700195662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46D90611382D5E100195662 /* JSONKit.m in Sources */,
+				D46D90641382D5FF00195662 /* MyWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D46D90581382D40700195662 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D46D90591382D40700195662 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D46D90491382D3CC00195662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D46D904A1382D3CC00195662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D46D905D1382D40700195662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WrapperLib/WrapperLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "WrapperLib/WrapperLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D46D905E1382D40700195662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WrapperLib/WrapperLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "WrapperLib/WrapperLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D46D903B1382D3CC00195662 /* Build configuration list for PBXProject "WrapperLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D90491382D3CC00195662 /* Debug */,
+				D46D904A1382D3CC00195662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46D905C1382D40700195662 /* Build configuration list for PBXNativeTarget "WrapperLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D905D1382D40700195662 /* Debug */,
+				D46D905E1382D40700195662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D46D90381382D3CC00195662 /* Project object */;
+}
