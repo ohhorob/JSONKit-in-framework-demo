@@ -6,6 +6,8 @@ When building JSONKit into a static library, wrapped in a framework the runtime 
 
 The branch `DeviceFixed` tests for the required class variables being uninitialised, and forces a call to `+load`, preventing the assertion failure on device.
 
+Also, the Framework target was created and configured as per the steps here – http://simplyitinc.blogspot.com/2011/04/creating-static-framework-in-xcode-4.html
+
 Running The Demo
 ==============
 
