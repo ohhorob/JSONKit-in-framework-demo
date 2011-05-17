@@ -16,6 +16,8 @@
 		D46D902A1382D19100195662 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D46D90281382D19100195662 /* MainWindow.xib */; };
 		D46D902D1382D19100195662 /* Demo_AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D902C1382D19100195662 /* Demo_AppViewController.m */; };
 		D46D90301382D19100195662 /* Demo_AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D46D902E1382D19100195662 /* Demo_AppViewController.xib */; };
+		D47709E11382DA6800984920 /* WrapperLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47709E01382DA6800984920 /* WrapperLib.framework */; };
+		D47709E31382DC1F00984920 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D47709E21382DC1F00984920 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D46D902B1382D19100195662 /* Demo_AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_AppViewController.h; sourceTree = "<group>"; };
 		D46D902C1382D19100195662 /* Demo_AppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_AppViewController.m; sourceTree = "<group>"; };
 		D46D902F1382D19100195662 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Demo_AppViewController.xib; sourceTree = "<group>"; };
+		D47709E01382DA6800984920 /* WrapperLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WrapperLib.framework; sourceTree = "<group>"; };
+		D47709E21382DC1F00984920 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 				D46D90171382D19100195662 /* UIKit.framework in Frameworks */,
 				D46D90191382D19100195662 /* Foundation.framework in Frameworks */,
 				D46D901B1382D19100195662 /* CoreGraphics.framework in Frameworks */,
+				D47709E11382DA6800984920 /* WrapperLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,7 @@
 		D46D90151382D19100195662 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D47709E01382DA6800984920 /* WrapperLib.framework */,
 				D46D90161382D19100195662 /* UIKit.framework */,
 				D46D90181382D19100195662 /* Foundation.framework */,
 				D46D901A1382D19100195662 /* CoreGraphics.framework */,
@@ -93,6 +99,7 @@
 		D46D901D1382D19100195662 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D47709E21382DC1F00984920 /* data.json */,
 				D46D901E1382D19100195662 /* Demo App-Info.plist */,
 				D46D901F1382D19100195662 /* InfoPlist.strings */,
 				D46D90221382D19100195662 /* Demo App-Prefix.pch */,
@@ -151,6 +158,7 @@
 				D46D90211382D19100195662 /* InfoPlist.strings in Resources */,
 				D46D902A1382D19100195662 /* MainWindow.xib in Resources */,
 				D46D90301382D19100195662 /* Demo_AppViewController.xib in Resources */,
+				D47709E31382DC1F00984920 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +242,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo App/Demo App-Prefix.pch";
@@ -248,6 +260,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo App/Demo App-Prefix.pch";
 				INFOPLIST_FILE = "Demo App/Demo App-Info.plist";
@@ -276,6 +292,7 @@
 				D46D90351382D19100195662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
