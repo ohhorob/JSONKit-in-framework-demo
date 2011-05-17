@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import <WrapperLib/MyWrapper.h>
+
 @interface Demo_AppViewController : UIViewController {
-    
+    MyWrapper *wrapper_;
 }
+- (IBAction)readName:(id)sender;
 
 @end
