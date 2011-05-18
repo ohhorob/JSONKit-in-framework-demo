@@ -8,8 +8,6 @@
 
 #import "Demo_AppAppDelegate.h"
 
-@class JKDictionary;
-
 #import "Demo_AppViewController.h"
 
 @implementation Demo_AppAppDelegate
@@ -23,7 +21,7 @@
 {
     // Override point for customization after application launch.
     
-    NSLog(@"klassy klass %@", [JKDictionary class]);
+    NSLog(@"class from string %@", NSClassFromString(@"JKDictionary"));
      
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
