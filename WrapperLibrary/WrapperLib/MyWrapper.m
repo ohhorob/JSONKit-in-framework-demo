@@ -12,6 +12,16 @@
 
 @implementation MyWrapper
 
+
++ (void)load;
+{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    NSLog(@"MyWrapper +load");
+    
+    [pool release]; pool = NULL;
+}
+
 - (id)init
 {
     self = [super init];

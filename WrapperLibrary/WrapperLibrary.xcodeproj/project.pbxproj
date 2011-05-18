@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D45C2C0A13843E4C008DB5A9 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D46D905F1382D5E100195662 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D46D905A1382D40700195662 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D46D90581382D40700195662 /* InfoPlist.strings */; };
 		D46D90611382D5E100195662 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D90601382D5E100195662 /* JSONKit.m */; };
 		D46D90641382D5FF00195662 /* MyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D90631382D5FF00195662 /* MyWrapper.m */; };
@@ -93,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D47709DF1382D9D000984920 /* MyWrapper.h in Headers */,
+				D45C2C0A13843E4C008DB5A9 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

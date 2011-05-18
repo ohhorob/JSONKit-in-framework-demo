@@ -8,6 +8,8 @@
 
 #import "Demo_AppAppDelegate.h"
 
+@class JKDictionary;
+
 #import "Demo_AppViewController.h"
 
 @implementation Demo_AppAppDelegate
@@ -20,6 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSLog(@"klassy klass %@", [JKDictionary class]);
      
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
@@ -70,6 +74,15 @@
     [_window release];
     [_viewController release];
     [super dealloc];
+}
+
++ (void)load;
+{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    NSLog(@"Demo_AppAppDelegate +load");
+    
+    [pool release]; pool = NULL;
 }
 
 @end
